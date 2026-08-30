@@ -1,0 +1,41 @@
+{
+  "FileVersion": 3,
+  "Version": 1,
+  "VersionName": "0.1.0",
+  "FriendlyName": "FaceForge ACE Toolset",
+  "Description": "Installing, starting and diagnosing the Audio2Face runner, as Model Context Protocol tools. Solving is not here: a face bank pointed at Audio2Face goes through FaceForge's own tools like any other, which is the point of the provider abstraction.",
+  "Category": "Automation Forge",
+  "CreatedBy": "Bojan Andrejek",
+  "CreatedByURL": "https://automation-forge-hq.web.app",
+  "DocsURL": "https://github.com/AutomationForgeHQ/FaceForgeACEToolset",
+  "MarketplaceURL": "",
+  "SupportURL": "https://github.com/AutomationForgeHQ/FaceForgeACEToolset/issues",
+  "EditorOnly": true,
+  "EnabledByDefault": false,
+  "CanContainContent": false,
+  "IsBetaVersion": false,
+  "IsExperimentalVersion": true,
+  "Installed": false,
+  "Modules": [
+    {
+      "Name": "FaceForgeACEToolset",
+      "Type": "Editor",
+      "LoadingPhase": "PostEngineInit",
+      "TargetAllowList": [
+        "Editor"
+      ]
+    }
+  ],
+  "Plugins": [
+    {
+      "Name": "FaceForgeACE",
+      "Enabled": true,
+      "Comment": "The capability this exposes, and the types in its signatures."
+    },
+    {
+      "Name": "ToolsetRegistry",
+      "Enabled": true,
+      "Comment": "Not ModelContextProtocol: MCP is one transport reading the registry, and coupling to it would be backwards."
+    }
+  ]
+}

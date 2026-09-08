@@ -38,7 +38,7 @@ class FACEFORGEACETOOLSET_API UACEToolset : public UToolsetDefinition
 
 public:
 
-	virtual FString GetToolsetVersion() const override { return TEXT("0.1"); }
+	virtual FString GetToolsetVersion() const override { return TEXT("0.1.1"); }
 
 	// ---------------------------------------------------------------------------------------------
 	// Where things stand

@@ -29,6 +29,9 @@ one. That is a design decision, not an omission — please do not "fix" it.
 | **Get Audio2Face Runner Logs** | what the container said. The first thing to read when it will not start |
 | **Prepare Audio2Face Model** | build this GPU's TensorRT engine now rather than inside the first solve |
 | **Start / Stop / Remove Audio2Face Runner** | the container |
+| **Restart Audio2Face Runner** | stop and start it again, seconds, rebuilding nothing - what puts a Hugging Face token entered while it was running into effect |
+| **Get Audio2Face Image State** | whether the built image was made from the runner files this plugin ships. Ask before suggesting a rebuild - a drifted image is the only one that is silently wrong |
+| **Rebuild Audio2Face Runner** | remove the container and build the image again - the only tool here that rebuilds. Minutes, and the TensorRT engine cache is untouched |
 | **Rent Audio2Face Gpu** | rent one from Runpod and point this project at it. **Spends money** |
 | **Get Audio2Face Pod Status** | what the rented pod is doing and what it costs |
 | **Set Audio2Face Pod State** | start, stop or terminate it |

@@ -1,7 +1,7 @@
 {
   "FileVersion": 3,
-  "Version": 1,
-  "VersionName": "0.1.1",
+  "Version": 2,
+  "VersionName": "0.1.2",
   "FriendlyName": "FaceForge ACE Toolset",
   "Description": "Installing, starting and diagnosing the Audio2Face runner, as Model Context Protocol tools. Solving is not here: a face bank pointed at Audio2Face goes through FaceForge's own tools like any other, which is the point of the provider abstraction.",
   "Category": "Automation Forge",
